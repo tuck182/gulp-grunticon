@@ -1,9 +1,12 @@
 {
-  "name": "gulp-grunticon",
-  "version": "0.9.0",
+  "name": "@ookla/gulp-grunticon",
+  "version": "0.9.1",
   "description": "A CSS icon solution for gulp, based on grunticon.",
-  "main": "gulp-grunticon.js",
-
+  "main": "dist/gulp-grunticon.js",
+  "scripts": {
+    "prepublish": "gulp clean,lint,build",
+    "lint": "gulp lint"
+  },
   "engines": {
     "node": ">=4.0"
   },
@@ -28,5 +31,26 @@
     "sharp": "^0.16.0",
     "through2-concurrent": "^1.1.1",
     "uglify-js": "2.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-1": "^6.13.0",
+    "del": "^2.2.2",
+    "eslint": "^3.4.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^1.14.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-adhoc": "0.0.3",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "minimist": "^1.2.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^0.3.7"
   }
 }

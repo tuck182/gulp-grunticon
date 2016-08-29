@@ -1,0 +1,6 @@
+{
+  'extends': './.eslintrc-base',
+  'env': {
+    'browser': false
+  }
+}

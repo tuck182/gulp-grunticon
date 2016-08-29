@@ -1,0 +1,118 @@
+{
+  'extends': 'eslint:recommended',
+  'parser': 'babel-eslint',
+  'parserOptions': {
+    'ecmaVersion': 7,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'jsx': true,
+      'experimentalObjectRestSpread': true
+    }
+  },
+  'env': {
+    'node': true,
+    'es6': true
+  },
+  'plugins': [
+    'filenames',
+    'import'
+  ],
+  'rules': {
+    'block-scoped-var': 'warn',
+    'brace-style': [ 'error', '1tbs', { 'allowSingleLine': true } ],
+    'comma-dangle': [ 'error', 'always-multiline' ],
+    'comma-spacing': 'error',
+    'complexity': [1, 8],
+    'curly': [ 'error', 'multi-line', 'consistent' ],
+    'default-case': 'error',
+    'dot-notation': 'warn',
+    'eqeqeq': 'error',
+    'indent': [ 'error', 2 ],
+    'keyword-spacing': 'error',
+    'linebreak-style': [ 'error', 'unix' ],
+    'max-len': [ 'warn', 100 ],
+    'no-console': 'error',
+    'no-constant-condition': 'error',
+    'no-debugger': 'error',
+    'no-extra-boolean-cast': 'off',
+    'no-inner-declarations': 'off',
+    'no-invalid-regexp': 'error',
+    'no-irregular-whitespace': 'error',
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-nested-ternary': 'error',
+    'no-regex-spaces': 'warn',
+    'no-spaced-func': 'error',
+    'no-unused-vars': [ 'error', {
+      'argsIgnorePattern': '^_'
+    } ],
+    'no-unreachable': 'error',
+    'quotes': [ 'error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
+    'semi': [ 'error', 'always' ],
+    'space-before-blocks': 'error',
+    'space-in-brackets': 'off',
+    'space-in-parens': 'off',
+    'space-infix-ops': 'error',
+    'spaced-comment': 'error',
+    'strict': [ 'error', 'global' ],
+    'use-isnan': 'error',
+    'valid-typeof': 'error',
+
+    ////////////IMPORT//////////////////////////////////
+    'import/no-commonjs': 'error',
+
+    ////////////////ES6 RULES///////////////////////////////////////////////
+     // require braces in arrow function body
+    'arrow-body-style': 'off',
+
+    // require parens in arrow function arguments
+    'arrow-parens': 'error',
+
+    // require space before/after arrow functions arrow
+    'arrow-spacing': 'error',
+
+    // verify super() callings in constructors
+    'constructor-super': 'error',
+
+    // enforce the spacing around the * in generator functions
+    'generator-star-spacing': 'error',
+
+    // disallow arrow functions where a condition is expected
+    'no-confusing-arrow': ['error', {'allowParens': true}],
+
+    // disallow modifying variables of class declarations
+    'no-class-assign': 'error',
+
+    // disallow modifying variables that are declared using const
+    'no-const-assign': 'error',
+
+    // disallow duplicate name in class members
+    'no-dupe-class-members': 'error',
+
+    // disallow to use this/super before super() calling in constructors.
+    'no-this-before-super': 'error',
+
+    // require let or const instead of var
+    'no-var': 'error',
+
+    // require method and property shorthand syntax for object literals
+    'object-shorthand': 'error',
+
+    // suggest using arrow functions as callbacks
+    'prefer-arrow-callback': 'off',
+
+    // suggest using of const declaration for variables that are never modified after declared
+    'prefer-const': 'error',
+
+    // suggest using Reflect methods where applicable
+    'prefer-reflect': 'off',
+
+    // suggest using the spread operator instead of .apply()
+    'prefer-spread': 'error',
+
+    // suggest using template literals instead of strings concatenation
+    'prefer-template': 'off',
+
+    // disallow generator functions that do not have yield
+    'require-yield': 'error',
+  }
+}
