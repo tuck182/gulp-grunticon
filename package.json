@@ -1,0 +1,32 @@
+{
+  "name": "gulp-grunticon",
+  "version": "0.9.0",
+  "description": "A CSS icon solution for gulp, based on grunticon.",
+  "main": "gulp-grunticon.js",
+
+  "engines": {
+    "node": ">=4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tuck182/gulp-grunticon.git"
+  },
+  "author": {
+    "name": "Matt Tucker",
+    "email": "tuck@whistlingfish.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuck182/gulp-grunticon/issues"
+  },
+  "homepage": "https://github.com/tuck182/gulp-grunticon",
+  "dependencies": {
+    "bluebird": "^3.4.3",
+    "gulp-util": "^3.0.7",
+    "handlebars": "^4.0.5",
+    "lodash": "3.10.1",
+    "sharp": "^0.16.0",
+    "through2-concurrent": "^1.1.1",
+    "uglify-js": "2.6.1"
+  }
+}
